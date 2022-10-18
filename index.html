@@ -4,81 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./dist/styles/styles.css" />
     <title>Colm O'Sullivan</title>
   </head>
   <body>
-    <header>
-      <nav class="navBar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="webDev">
-        <div class="heroBox">
-          <div class="heroText">
+    <header class="flexContainer">
+      <div class="wrapper">
+        <div class="navBox">
+          <nav class="navBar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- .navBox ends -->
+        <div class="heroBox flexContainer">
+          <div class="heroText flexContainer">
             <h1>Colm O'Sullivan</h1>
             <h2>Toronto based web developer</h2>
           </div>
           <!-- .heroText ends -->
         </div>
         <!-- .heroBox ends -->
-      </section>
-      <!-- .webDev ends -->
-      <section class="aboutSection">
-        <div class="aboutContainer">
-          <img src="" alt="" />
-          <h3>About me</h3>
-          <p>
-            This is me, Colm. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Animi sint earum repellat excepturi nulla soluta esse quos
-            eligendi minus suscipit? Rerum tenetur blanditiis beatae!
-            Consequatur illum modi voluptatum iusto necessitatibus magnam quia
-            obcaecati eveniet nam repudiandae perspiciatis voluptates nobis
-            excepturi, amet quisquam explicabo vitae, doloribus deserunt
-            corporis veniam. Est, hic.
-          </p>
+      </div>
+      <!-- .WRAPPER ENDS -->
+    </header>
+    <main>
+      <section class="aboutSection flexContainer">
+        <div class="aboutContainer flexContainer wrapper">
+          <div class="profileImageContainer">
+            <img
+              src="./assets/images/ProfilePic.jpg"
+              alt="A picture of Colm O Sullivan."
+            />
+          </div>
+          <!-- .profileImageContainer ends -->
+          <div class="aboutText">
+            <h3>About me</h3>
+            <p>
+              This is me, Colm. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Animi sint earum repellat excepturi nulla soluta
+              esse quos eligendi minus suscipit? Rerum tenetur blanditiis
+              beatae! Consequatur illum modi voluptatum iusto necessitatibus
+              magnam quia obcaecati.
+            </p>
+          </div>
         </div>
         <!-- .aboutContainer ends -->
       </section>
       <!-- .aboutMe ends -->
-      <section class="skillsSection">
-        <div class="skillText">
-          <h3>Skills</h3>
-          <p>These are my skills, wowee.</p>
-        </div>
-        <!-- .skillText ends -->
-        <div class="skillList">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Sass</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Firebase</li>
-            <li>Git and GitHub</li>
-            <li>Netlify</li>
-            <li>Using REST APIs and AJAX</li>
-            <li>Web Accesibility</li>
-            <li>Communication</li>
-            <li>Paired programming</li>
+      <section class="skillSection">
+        <div class="skillsContainer wrapper flexContainer">
+          <div class="skillText">
+            <h3>Skills</h3>
+            <p>These are my skills, wowee.</p>
+          </div>
+          <!-- .skillText ends -->
+          <!-- <div class="skillList flexContainer"> -->
+          <ul class="flexContainer">
+            <div class="listOne">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
+              <li>JavaScript</li>
+            </div>
+            <!-- .listOne end -->
+            <div class="listTwo">
+              <li>React</li>
+              <li>Firebase</li>
+              <li>Git and GitHub</li>
+              <li>Netlify</li>
+            </div>
+            <!-- .listTwo end -->
+            <div class="listThree">
+              <li>Using REST APIs and AJAX</li>
+              <li>Web Accesibility</li>
+              <li>Communication</li>
+              <li>Paired programming</li>
+            </div>
+            <!-- .listThree end -->
           </ul>
+          <!-- </div> -->
+          <!-- .skillList ends -->
         </div>
-        <!-- .skillList ends -->
       </section>
       <!-- .skillsSection ends -->
       <section class="projectsSection">
         <h3>Projects</h3>
+        <div class="projectContainer">
+          <div class="projectCard">
+            <img src="" alt="" />
+            <div class="projectCardText">
+              <h4>Project Title here</h4>
+              <h5>languages used here</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                suscipit?
+              </p>
+            </div>
+            <!-- .projectCardText ends -->
+            <div class="cardButtons">
+              <button>View live</button>
+              <button>View code</button>
+            </div>
+          </div>
+          <!-- .projectCard ends -->
+        </div>
+        <!-- .projectContainer ends -->
       </section>
       <!-- .projectsSection ends -->
       <section class="ContactSection">
-        <h3>Contact</h3>
+        <div class="contactContainer">
+          <h3>Contact</h3>
+        </div>
+        <!-- .contactContainer ends -->
       </section>
+      <!-- .ContactSection ends -->
     </main>
     <footer></footer>
   </body>

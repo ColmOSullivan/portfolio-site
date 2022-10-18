@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.skillSection{
+    background-color:$secondaryColor ;
+    
+}
+
+.skillsContainer{
+    padding: 100px 0;
+    justify-content: center;
+    
+    .skillText{
+        padding: 10px;
+        color: red;
+    }
+    ul{
+        li{
+            padding: 0 10px;
+            color: red;
+            list-style-type: disc;
+        }
+    }
+}

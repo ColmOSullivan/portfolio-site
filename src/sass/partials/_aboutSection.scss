@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+.aboutSection{
+    justify-content: center;
+    background-color:$charlestonGreen;
+}
+
+.aboutContainer{
+    padding: 50px 0;
+    flex-direction: column;
+    text-align: center;
+    
+    .profileImageContainer{
+        img{
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+    .aboutText{
+        color: white;
+        h3{
+            font-size: 2rem;
+            
+        }
+    }
+    
+}

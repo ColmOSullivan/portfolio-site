@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/assets/images/tor-skyline.jpg);
+    background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 75vh;
+      flex-direction: column;
+}
+
+/*.navBar styling*/
+.navBar{
+    ul{
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 30px;
+            a{
+              color: white;
+              text-shadow: 1px 1px black;
+          }
+          }
+    }
+  }
+
+
+
+
+/*.heroBox and .heroText styling */  
+.heroBox{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .heroText{
+        margin: auto;
+        flex-direction: column;
+        h1{
+            font-size: 3.5rem;
+            color: white;
+        }
+        h2{
+            color: whitesmoke;
+            font-size: 1.25rem;
+        }
+    }
+    
+} 
+
+
+
