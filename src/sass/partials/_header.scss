@@ -1,31 +1,15 @@
 @use "variables" as *;
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/assets/images/tor-skyline.jpg);
-    background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-      height: 75vh;
-      flex-direction: column;
+    background-image: linear-gradient(black, black), url(/assets/images/tor-skyline.jpg);
+    background-blend-mode: saturation;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
+    flex-direction: column;
 }
-
-/*.navBar styling*/
-.navBar{
-    ul{
-        display: flex;
-        justify-content: center;
-        li {
-            padding: 30px;
-            a{
-              color: white;
-              text-shadow: 1px 1px black;
-          }
-          }
-    }
-  }
-
-
 
 
 /*.heroBox and .heroText styling */  
@@ -34,14 +18,15 @@ header{
     align-items: center;
     text-align: center;
     .heroText{
-        margin: auto;
         flex-direction: column;
         h1{
+            margin-top: 6rem;
             font-size: 3.5rem;
+            border-bottom: 1px white solid;
             color: white;
         }
         h2{
-            color: whitesmoke;
+            color: white;
             font-size: 1.25rem;
         }
     }
@@ -49,4 +34,100 @@ header{
 } 
 
 
+// Nav and anchor styling
+.navBar{
+    font-size: 32px;
+    letter-spacing: 1px;
+    ul li {
+      padding: 30px;
+    }
+    @media (max-width: $mobile){
+      ul li {
+        padding: 15px;
+      }
+    }
+  }
 
+  nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+    &:hover{
+        color: $fifthAmendment;
+    }
+    &:focus{
+        color:$fifthAmendment;
+    }
+  }
+  
+/* remove default styling from lists */
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+
+// hamburger menu styling
+
+.bar{
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: $sixthColor;
+  box-shadow: 1px 1px black;
+}
+
+@media (min-width:$tablet) {
+.hamburgerMenu{
+  display: none;
+} 
+}
+
+@media(max-width:$tablet){
+  .navBar{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hamburgerMenu{
+    display: block;
+    position: fixed;
+    margin-top: 1rem;
+    z-index: 99999;
+  }
+  .hamburgerMenu.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburgerMenu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburgerMenu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navList{
+    position: fixed;
+    left: 100%;
+    top: 45px;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    text-align:end;
+    transition: 0.3s;
+
+  }
+  .navItem{
+    margin: 16px 0;
+  }
+  
+  .navList.active{
+    left: 0;
+    
+}
+}

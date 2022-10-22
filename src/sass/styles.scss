@@ -4,7 +4,35 @@
 @use "./partials/fontsAndTypography";
 @use "./partials/header";
 @use "./partials/aboutSection";
-@use "./partials/skillsSection"
+@use "./partials/skillsSection";
+@use "./partials/projectsSection";
 
 
 
+/*utility classes and default settings*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* remove default styling from lists */
+ul {
+    list-style: none;
+  }
+  /* remove underline from anchor tags */
+  a {
+    text-decoration: none;
+  }
+
+/*Utility classes*/   
+.flexContainer{
+    display: flex;
+}
+
+/*wrapper stylings*/
+.wrapper{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+} 

@@ -2,14 +2,13 @@
 
 .aboutSection{
     justify-content: center;
-    background-color:$charlestonGreen;
+    background-color:$secondaryColor;
 }
 
 .aboutContainer{
     padding: 50px 0;
     flex-direction: column;
     text-align: center;
-    
     .profileImageContainer{
         img{
             width: 200px;
@@ -18,9 +17,14 @@
         }
     }
     .aboutText{
-        color: white;
+        color: $primaryColor;
+        text-align: center;
         h3{
             font-size: 2rem;
+        }
+        p{
+          line-height: 1.6;
+          letter-spacing: 1.5px;
             
         }
     }

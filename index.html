@@ -10,17 +10,23 @@
   <body>
     <header class="flexContainer">
       <div class="wrapper">
-        <div class="navBox">
-          <nav class="navBar">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- .navBox ends -->
+        <nav class="navBar">
+          <ul class="navList">
+            <li class="navItem"><a href="#">Home</a></li>
+            <li class="navItem"><a href="#">About</a></li>
+            <li class="navItem"><a href="#">Projects</a></li>
+            <li class="navItem"><a href="#">Contact</a></li>
+            <!-- .navItem ends -->
+          </ul>
+          <!-- .navList ends -->
+          <div class="hamburgerMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- .hamburgerMenu ends -->
+        </nav>
+        <!-- .navBar ends -->
         <div class="heroBox flexContainer">
           <div class="heroText flexContainer">
             <h1>Colm O'Sullivan</h1>
@@ -45,11 +51,11 @@
           <div class="aboutText">
             <h3>About me</h3>
             <p>
-              This is me, Colm. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Animi sint earum repellat excepturi nulla soluta
-              esse quos eligendi minus suscipit? Rerum tenetur blanditiis
-              beatae! Consequatur illum modi voluptatum iusto necessitatibus
-              magnam quia obcaecati.
+              Hello, my name is Colm O'Sullivan, I am a Front-end web developer
+              based out of Toronto.<br />
+              Being a recent grad of Juno College of Technology's Web
+              Development Immersive bootcamp, I'm looking to take the things
+              I've learned there and in my previous career to somewhere new.
             </p>
           </div>
         </div>
@@ -65,21 +71,21 @@
           <!-- .skillText ends -->
           <!-- <div class="skillList flexContainer"> -->
           <ul class="flexContainer">
-            <div class="listOne">
+            <div class="list">
               <li>HTML</li>
               <li>CSS</li>
               <li>Sass</li>
               <li>JavaScript</li>
             </div>
             <!-- .listOne end -->
-            <div class="listTwo">
+            <div class="list">
               <li>React</li>
               <li>Firebase</li>
               <li>Git and GitHub</li>
               <li>Netlify</li>
             </div>
             <!-- .listTwo end -->
-            <div class="listThree">
+            <div class="list">
               <li>Using REST APIs and AJAX</li>
               <li>Web Accesibility</li>
               <li>Communication</li>
@@ -92,28 +98,76 @@
         </div>
       </section>
       <!-- .skillsSection ends -->
-      <section class="projectsSection">
+      <section class="projectsSection flexContainer">
         <h3>Projects</h3>
-        <div class="projectContainer">
-          <div class="projectCard">
-            <img src="" alt="" />
-            <div class="projectCardText">
-              <h4>Project Title here</h4>
-              <h5>languages used here</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                suscipit?
-              </p>
+        <div class="wrapper">
+          <div class="projectContainer">
+            <div class="projectCard">
+              <img
+                class="projectImage"
+                src="./assets/images/justCanyonThings.jpg"
+                alt=""
+              />
+              <div class="projectCardText flexContainer">
+                <h4>Project Title here</h4>
+                <h5>languages used here</h5>
+                <summary>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sunt, suscipit?
+                </summary>
+                <div class="cardButtons">
+                  <a href="#">View live</a>
+                  <a href="#">View code</a>
+                </div>
+              </div>
+              <!-- .projectCardText ends -->
             </div>
-            <!-- .projectCardText ends -->
-            <div class="cardButtons">
-              <button>View live</button>
-              <button>View code</button>
+            <!-- .projectCard ends -->
+            <div class="projectCard">
+              <img
+                class="projectImage"
+                src="./assets/images/justCanyonThings.jpg"
+                alt=""
+              />
+              <div class="projectCardText flexContainer">
+                <h4>Project Title here</h4>
+                <h5>languages used here</h5>
+                <summary>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sunt, suscipit?
+                </summary>
+                <div class="cardButtons">
+                  <a href="#">View live</a>
+                  <a href="#">View code</a>
+                </div>
+              </div>
+              <!-- .projectCardText ends -->
             </div>
+            <!-- .projectCard ends -->
+            <div class="projectCard">
+              <img
+                class="projectImage"
+                src="./assets/images/justCanyonThings.jpg"
+                alt=""
+              />
+              <div class="projectCardText flexContainer">
+                <h4>Project Title here</h4>
+                <h5>languages used here</h5>
+                <summary>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sunt, suscipit?
+                </summary>
+                <div class="cardButtons">
+                  <a href="#">View live</a>
+                  <a href="#">View code</a>
+                </div>
+              </div>
+              <!-- .projectCardText ends -->
+            </div>
+            <!-- .projectCard ends -->
           </div>
-          <!-- .projectCard ends -->
+          <!-- .projectContainer ends -->
         </div>
-        <!-- .projectContainer ends -->
       </section>
       <!-- .projectsSection ends -->
       <section class="ContactSection">
@@ -125,5 +179,6 @@
       <!-- .ContactSection ends -->
     </main>
     <footer></footer>
+    <script src="./app.js"></script>
   </body>
 </html>
