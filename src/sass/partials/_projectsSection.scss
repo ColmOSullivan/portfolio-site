@@ -6,10 +6,13 @@
     background: $secondaryColor;
     .projectContainer{
         margin: 5rem auto;
-        display:grid;
-        grid-template-columns: 33% 33% 33%; 
-        gap: 1em;
+        display: flex;
+        @media (max-width: $tablet){
+            flex-direction: column;
+        }
         .projectCard{
+            width: 33%;
+            margin: 20px;
             background: $fourthColor;
             display: flex;
             flex-direction: column;
@@ -17,6 +20,10 @@
             border: 1px solid $sixthColor;
             border-radius: 5px;
             transition: 0.3s;
+            @media (max-width: $tablet){
+                width: 90%;
+                height: auto;
+            }
             &:hover{
                 box-shadow: -10px 10px 0 $sixthColor;
             }
@@ -37,6 +44,7 @@
                     text-transform: uppercase;
                 }
                 summary{
+                    size: 1rem;
                     text-align: left;
                     list-style: none;
                 }
@@ -47,7 +55,7 @@
                 a{
                     background-color: $sixthColor;
                     padding: 5px 10px;
-                    // margin: 20px 0;
+                    width: 25%;
                     font-size: 1em;
                     text-transform: capitalize;
                     text-align: center;
@@ -56,11 +64,11 @@
                     transition: 0.3s;
                     &:hover{
                         background-color: $thirdColor;
-                        color: $fifthAmendment;
+                        color: black;
                     }
                     &:focus{
                         background-color: $thirdColor;
-                        color: $fifthAmendment;
+                        color: black;
                     }
                 }
             }

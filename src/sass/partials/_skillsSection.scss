@@ -8,16 +8,21 @@
 .skillsContainer{
     padding: 125px 0;
     justify-content: space-evenly;
+    flex-direction: column;
     .skillText{
-        padding: 10px;
-    }
-    ul{
-        li{
-            padding: 0 10px;
-            list-style-type: disc;
+        justify-content: center;
+        h3{
+            
+            border-bottom: 2px solid;
         }
     }
-    .list{
-        padding: 0 10px;
+    .skillList{
+        flex-direction: column;
+        .list{
+            justify-content: space-evenly;
+            .skillIcon{
+                font-size: 5rem;
+            }
+        }
     }
 }
