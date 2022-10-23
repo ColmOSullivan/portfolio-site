@@ -7,11 +7,17 @@
     .projectContainer{
         margin: 5rem auto;
         display: flex;
+        @media (max-width: $desktop){
+            width: 50%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         @media (max-width: $tablet){
             flex-direction: column;
         }
         .projectCard{
-            width: 33%;
+            width: 75%;
+            height: auto;
             margin: 20px;
             background: $fourthColor;
             display: flex;
@@ -20,7 +26,7 @@
             border: 1px solid $sixthColor;
             border-radius: 5px;
             transition: 0.3s;
-            @media (max-width: $tablet){
+            @media (max-width: $desktop){
                 width: 90%;
                 height: auto;
             }
@@ -28,7 +34,20 @@
                 box-shadow: -10px 10px 0 $sixthColor;
             }
             .projectImage{
-                width: 100%
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img{
+                    filter: grayscale(100%);
+                    margin: 10px 0;
+                    width: 90%;
+                    height: auto;
+                    &:hover{
+                        filter: grayscale(0%);
+                    }
+                }
+                
+                
             }
             .projectCardText{
                 flex-direction: column;
@@ -55,13 +74,17 @@
                 a{
                     background-color: $sixthColor;
                     padding: 5px 10px;
-                    width: 25%;
                     font-size: 1em;
                     text-transform: capitalize;
                     text-align: center;
                     border: none;
                     border-radius: 5px;
                     transition: 0.3s;
+                    @media (max-width: $desktop){
+                        width: 25%;
+                        margin: 5px 0;
+                        padding: 1px;
+                    }
                     &:hover{
                         background-color: $thirdColor;
                         color: black;
