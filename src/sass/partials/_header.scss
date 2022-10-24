@@ -1,15 +1,22 @@
 @use "variables" as *;
 
 header{
-    background-image: linear-gradient(black, black), url(/assets/images/tor-skyline.jpg);
-    background-blend-mode: saturation;
-    background-size:cover;
-    background-position:center;
+    // background-image: linear-gradient(black, black), url(/assets/images/tor-skyline.jpg);
+    // background-blend-mode: saturation;
+    background-image: $gradientOne;
+    background-size:400%;
+    background-position:left;
     background-repeat: no-repeat;
-    position: relative;
-    height: 90vh;
+    height: min(50vh, 100rem);
     flex-direction: column;
+    animation: bg-animation 10s infinite alternate;
 }
+
+@keyframes bg-animation{
+  0%{background-position: left;}
+  100%{background-position: 100%;}
+}
+/*Thanks to Kevin Powell for "Fun ways to animate CSS gradients" tutorial*/ 
 
 
 /*.heroBox and .heroText styling */  
@@ -20,12 +27,14 @@ header{
     .heroText{
         flex-direction: column;
         h1{
+            text-shadow: 1px 1px black;
             margin-top: 6rem;
             font-size: 3.5rem;
             border-bottom: 1px white solid;
             color: white;
         }
         h2{
+            text-shadow: 1px 1px black;
             color: white;
             font-size: 1.25rem;
         }
@@ -36,10 +45,14 @@ header{
 
 // Nav and anchor styling
 .navBar{
+  justify-content: center;
     font-size: 32px;
     letter-spacing: 1px;
     ul li {
       padding: 30px;
+    }
+    @media (max-width:$tablet){
+      justify-content: end;
     }
     @media (max-width: $mobile){
       ul li {
@@ -49,6 +62,7 @@ header{
   }
 
   nav a {
+    text-shadow: 1px 1px black;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -81,7 +95,7 @@ ul {
   height: 4px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: $sixthColor;
+  background-color: white;
   box-shadow: 1px 1px black;
 }
 

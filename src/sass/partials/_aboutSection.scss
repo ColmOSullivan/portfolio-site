@@ -2,25 +2,33 @@
 
 .aboutSection{
     justify-content: center;
-    background-color:$secondaryColor;
+    background-color:$primaryColor;
+    // background: rgb(255,255,255);
+    // background: linear-gradient(180deg, rgba(255,255,255,1) 49%, rgba(0,93,133,1) 100%); 
+    // background: rgb(0,93,133);
+     
 }
 
 .aboutContainer{
     padding: 50px 0;
-    flex-direction: column;
+    justify-content: center;
+    // gap: 5%;
     text-align: center;
     .profileImageContainer{
+        width: 30%;
         img{
-            width: 200px;
+            border:2px solid #005D85;
+            width: 300px;
             height: auto;
-            border-radius: 50%;
+            border-radius: 25%;
         }
     }
     .aboutText{
-        color: $primaryColor;
+        width: 70%;
         text-align: center;
+        text-shadow: 1px 1px black;
         p{
-            text-align: left;
+          text-align: left;
           line-height: 1.6;
           letter-spacing: 1.5px;
             

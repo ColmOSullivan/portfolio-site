@@ -2,22 +2,22 @@
 
 .contactSection{
     background-color:$thirdColor;
-    // margin: 5rem auto;
 }
 
 .contactContainer{
     flex-direction: column;
-    // justify-content: center;
     text-align: center;
     padding: 60px 0;
-    
     .socialContainer{
         flex-direction: row;
         justify-content: center;       
         .socialIcon{
-            padding: 5%;
+            padding: 10PX;
             font-size: 2rem;
         } 
+    }
+    .contactText{
+        padding-bottom: 15px;
     }
     .resumeButton{
             background-color: $sixthColor;

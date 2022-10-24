@@ -1,11 +1,13 @@
 // COLOURS
-$primaryColor:#2c2e31;
+// $primaryColor:#343434;
+$primaryColor:#121212;
 $secondaryColor: #E8F7EE;
-$thirdColor:#B8C4BB;
-$fourthColor:#C9D6EA;
-$fifthAmendment:#F98948;
-$sixthColor:#4195aa;
-
+$thirdColor:#005D85;
+$fourthColor:#aadfb99d;
+$fifthAmendment:#FFCB77;
+$sixthColor:#23967F;
+$gradientOne:(linear-gradient(90deg, #ffcb77,#7daf9c,#23967f,#005d85));
+$gradientTwo:(linear-gradient(45deg,#121212,#313131));
 
 // FONTS
 $headingFont: 'Roboto-bold', Arial;
@@ -14,6 +16,6 @@ $bodyFont: 'Lora-Medium', Arial;
 
 // breakpoints
 $wideDesktop:"1300px";
-$desktop:"1100px";
+$desktop:"1200px";
 $tablet:"810px";
 $mobile:"420px";

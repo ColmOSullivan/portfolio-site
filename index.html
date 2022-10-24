@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/styles/styles.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
-
     <title>Colm O'Sullivan</title>
   </head>
   <body>
-    <header class="flexContainer">
+    <header class="">
       <div class="wrapper">
-        <nav class="navBar">
+        <nav class="navBar flexContainer">
           <ul class="navList">
-            <li class="navItem"><a href="#">Home</a></li>
-            <li class="navItem"><a href="#">About</a></li>
-            <li class="navItem"><a href="#">Projects</a></li>
-            <li class="navItem"><a href="#">Contact</a></li>
+            <li class="navItem"><a href="#about">About</a></li>
+            <li class="navItem"><a href="#skills">Skills</a></li>
+            <li class="navItem"><a href="#projects">Projects</a></li>
+            <li class="navItem"><a href="#contact">Contact</a></li>
             <!-- .navItem ends -->
           </ul>
           <!-- .navList ends -->
@@ -45,20 +43,21 @@
       <!-- .WRAPPER ENDS -->
     </header>
     <main>
-      <section class="aboutSection flexContainer">
+      <section id="about" class="aboutSection flexContainer">
         <div class="aboutContainer flexContainer wrapper">
-          <div class="profileImageContainer">
+          <!-- <div class="profileImageContainer">
             <img
               src="./assets/images/ProfilePic.jpg"
               alt="A picture of Colm O Sullivan."
             />
-          </div>
+          </div> -->
           <!-- .profileImageContainer ends -->
           <div class="aboutText">
             <h3>About me</h3>
+
             <p>
               Hello, my name is Colm O'Sullivan. I am a Front-end web developer
-              with a passion for entertaining, accessible web content.
+              with a passion for entertaining and accessible web content.
               <br /><br />
               I am entering the world of tech with skills that I've developped
               at Juno College of Technology and, the experience I've grown over
@@ -75,189 +74,165 @@
         <!-- .aboutContainer ends -->
       </section>
       <!-- .aboutMe ends -->
-      <section class="skillSection">
+      <section id="skills" class="skillSection">
         <div class="skillsContainer wrapper flexContainer">
           <div class="skillText flexContainer">
             <h3>Skills</h3>
           </div>
           <!-- .skillText ends -->
-          <div class="skillList flexContainer">
-            <div class="list flexContainer">
-              <div class="skillIcon">
-                <i class="fa-brands fa-html5"></i>
-                <!-- <span>HTML5</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-brands fa-css3-alt"></i>
-                <!-- <span>CSS3</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-brands fa-sass"></i>
-                <!-- <span>Sass</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-brands fa-square-js"></i>
-                <!-- <span>JavaScript</span> -->
-              </div>
+          <div class="skillList">
+            <div class="skillIcon">
+              <i class="fa-brands fa-html5"></i>
+              <span class="skillText">HTML5</span>
             </div>
-            <!-- .list end -->
-            <div class="list flexContainer">
-              <div class="skillIcon">
-                <i class="fa-brands fa-react"></i>
-                <!-- <span>React</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="devicon-firebase-plain"></i>
-                <!-- <span>Firebase</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-brands fa-github"></i>
-                <!-- <span>Github</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-solid fa-terminal"></i>
-                <!-- <span>Terminal</span> -->
-              </div>
+            <div class="skillIcon">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="skillText">CSS3</span>
             </div>
-            <!-- .list end -->
-            <div class="list flexContainer">
-              <div class="skillIcon">
-                <i class="fa-solid fa-bug-slash"></i>
-                <!-- <span>Debugging</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-solid fa-mobile"></i>
-                <!-- <span>Web accessibility</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-sharp fa-solid fa-tower-cell"></i>
-                <!-- <span>Communication</span> -->
-              </div>
-              <div class="skillIcon">
-                <i class="fa-solid fa-people-group"></i>
-                <!-- <span>Paired programming</span> -->
-              </div>
+            <div class="skillIcon">
+              <i class="fa-brands fa-sass"></i>
+              <span class="skillText">Sass</span>
             </div>
-            <!-- .listend -->
+            <div class="skillIcon">
+              <i class="fa-brands fa-square-js"></i>
+              <span class="skillText">JavaScript</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-brands fa-react"></i>
+              <span class="skillText">React</span>
+            </div>
+            <div class="skillIcon">
+              <i class="devicon-firebase-plain"></i>
+              <span class="skillText">Firebase</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-brands fa-github"></i>
+              <span class="skillText">Github</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-solid fa-terminal"></i>
+              <span class="skillText">Terminal</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-solid fa-bug-slash"></i>
+              <span class="skillText">Debugging</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-solid fa-mobile"></i>
+              <span class="skillText">Web accessibility</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-sharp fa-solid fa-tower-cell"></i>
+              <span class="skillText">Communication</span>
+            </div>
+            <div class="skillIcon">
+              <i class="fa-solid fa-people-group"></i>
+              <span class="skillText">Paired programming</span>
+            </div>
           </div>
           <!-- .skillList .flexContainer ends -->
         </div>
       </section>
       <!-- .skillsSection ends -->
-      <section class="projectsSection flexContainer">
+      <section id="projects" class="projectsSection flexContainer">
         <h3>Projects</h3>
         <div class="wrapper">
           <div class="projectContainer">
-            <div class="projectRow">
-              <div class="projectCard">
-                <div class="projectImage">
-                  <img src="./assets/images/justCanyonThings.jpg" alt="" />
+            <div class="projectGrid">
+              <div class="card stacked">
+                <img
+                  src="./assets/images/pokedexScreenshot.jpg"
+                  alt="A screenshot of a pokedex game devloped for the web"
+                  class="imgCard"
+                />
+                <div class="cardContent">
+                  <h4 class="cardTitle">Project Title</h4>
+                  <p class="cardSub">Languages used.</p>
+                  <p class="cardDescription">Lorem, ipsum dolor.</p>
+                  <a class="cardButton" href="#">View live</a>
+                  <a class="cardButton" href="#">View code</a>
                 </div>
-                <div class="projectCardText flexContainer">
-                  <h4>Project Title here</h4>
-                  <h5>languages used here</h5>
-                  <summary>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, suscipit?
-                  </summary>
-                  <div class="cardButtons">
-                    <a href="#">View live</a>
-                    <a href="#">View code</a>
-                  </div>
-                </div>
-                <!-- .projectCardText ends -->
+                <!-- .cardContent ends -->
               </div>
-              <!-- .projectCard ends -->
-              <div class="projectCard">
-                <div class="projectImage">
-                  <img src="./assets/images/justCanyonThings.jpg" alt="" />
+              <!-- .card stacked ends -->
+              <div class="card stacked">
+                <img
+                  src="./assets/images/pokedexScreenshot.jpg"
+                  alt="A screenshot of a pokedex game devloped for the web"
+                  class="imgCard"
+                />
+                <div class="cardContent">
+                  <h4 class="cardTitle">Project Title</h4>
+                  <p class="cardSub">Languages used.</p>
+                  <p class="cardDescription">Lorem, ipsum dolor.</p>
+                  <a class="cardButton" href="#">View live</a>
+                  <a class="cardButton" href="#">View code</a>
                 </div>
-                <div class="projectCardText flexContainer">
-                  <h4>Project Title here</h4>
-                  <h5>languages used here</h5>
-                  <summary>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, suscipit?
-                  </summary>
-                  <div class="cardButtons">
-                    <a href="#">View live</a>
-                    <a href="#">View code</a>
-                  </div>
-                </div>
-                <!-- .projectCardText ends -->
+                <!-- .cardContent ends -->
               </div>
-              <!-- .projectCard ends -->
+              <!-- .card stacked ends -->
+              <div class="card stacked">
+                <img
+                  src="./assets/images/pokedexScreenshot.jpg"
+                  alt="A screenshot of a pokedex game devloped for the web"
+                  class="imgCard"
+                />
+                <div class="cardContent">
+                  <h4 class="cardTitle">Project Title</h4>
+                  <p class="cardSub">Languages used.</p>
+                  <p class="cardDescription">Lorem, ipsum dolor.</p>
+                  <a class="cardButton" href="#">View live</a>
+                  <a class="cardButton" href="#">View code</a>
+                </div>
+                <!-- .cardContent ends -->
+              </div>
+              <!-- .card stacked ends -->
+              <div class="card stacked">
+                <img
+                  src="./assets/images/pokedexScreenshot.jpg"
+                  alt="A screenshot of a pokedex game devloped for the web"
+                  class="imgCard"
+                />
+                <div class="cardContent">
+                  <h4 class="cardTitle">Project Title</h4>
+                  <p class="cardSub">Languages used.</p>
+                  <p class="cardDescription">Lorem, ipsum dolor.</p>
+                  <a class="cardButton" href="#">View live</a>
+                  <a class="cardButton" href="#">View code</a>
+                </div>
+                <!-- .cardContent ends -->
+              </div>
+              <!-- .card stacked ends -->
             </div>
-            <div class="projectRow">
-              <div class="projectCard">
-                <div class="projectImage">
-                  <img src="./assets/images/justCanyonThings.jpg" alt="" />
-                </div>
-                <div class="projectCardText flexContainer">
-                  <h4>Project Title here</h4>
-                  <h5>languages used here</h5>
-                  <summary>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, suscipit?
-                  </summary>
-                  <div class="cardButtons">
-                    <a href="#">View live</a>
-                    <a href="#">View code</a>
-                  </div>
-                </div>
-                <!-- .projectCardText ends -->
-              </div>
-              <!-- .projectCard ends -->
-              <div class="projectCard">
-                <div class="projectImage">
-                  <img src="./assets/images/justCanyonThings.jpg" alt="" />
-                </div>
-                <div class="projectCardText flexContainer">
-                  <h4>Project Title here</h4>
-                  <h5>languages used here</h5>
-                  <summary>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, suscipit?
-                  </summary>
-                  <div class="cardButtons">
-                    <a href="#">View live</a>
-                    <a href="#">View code</a>
-                  </div>
-                </div>
-                <!-- .projectCardText ends -->
-              </div>
-              <!-- .projectCard ends -->
-            </div>
+            <!-- .projectGrid ends -->
           </div>
           <!-- .projectContainer ends -->
         </div>
       </section>
       <!-- .projectsSection ends -->
-      <section class="contactSection">
-        <div class="contactContainer flexContainer">
+      <section id="contact" class="contactSection">
+        <div class="contactContainer wrapper flexContainer">
           <h3>Contact</h3>
-          <div class="wrapper">
-            <div class="socialContainer flexContainer">
-              <div class="socialIcon">
-                <i class="devicon-linkedin-plain"></i>
-              </div>
-              <div class="socialIcon">
-                <i class="devicon-github-original"></i>
-              </div>
-              <div class="socialIcon">
-                <i class="fa-sharp fa-solid fa-envelope"></i>
-              </div>
-            </div>
-            <!-- .socialContainer ends -->
 
-            <div class="contactText">
-              <p>Please use any of the following methods to contact me.</p>
+          <div class="socialContainer flexContainer">
+            <div class="socialIcon">
+              <i class="devicon-linkedin-plain"></i>
             </div>
-            <div>
-              <a class="resumeButton" href="#">Resume</a>
+            <div class="socialIcon">
+              <i class="devicon-github-original"></i>
+            </div>
+            <div class="socialIcon">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
             </div>
           </div>
-          <!-- .wrapper ends -->
+          <!-- .socialContainer ends -->
+
+          <div class="contactText">
+            <p>Please use any of the following methods to contact me.</p>
+          </div>
+          <div>
+            <a class="resumeButton" href="#">Resume</a>
+          </div>
         </div>
         <!-- .contactContainer ends -->
       </section>
