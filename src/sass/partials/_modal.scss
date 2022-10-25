@@ -42,14 +42,17 @@
   .modalContent {
     border: 3px ridge $fourthColor;
     background: $thirdColor;
-    margin-top: 100px;
-    width: 75%;
+    margin-top: 60px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: 8px 24px;
     border-radius: 4px;
     z-index: 4;
     text-align: left;
+    @media (max-width:$mobile){
+      width: 90%;
+    }
     .modalHeader {
         text-align: center;
         font-weight: 500;
