@@ -1,6 +1,8 @@
 @use "variables" as *;
 
 .modalOpen{
+  font-family: $headingFont;
+  text-transform: capitalize;
   cursor: pointer;
   color: white;
   padding:6px 10px;
@@ -94,8 +96,10 @@
       }
       .modalFooter {
         text-align: center;
-        padding: 15px 0;
+        padding-bottom: 15px;
         .modalClose {
+          font-family: $headingFont;
+          text-transform: capitalize;
           cursor: pointer;
           color: white;
           padding:6px 10px;
