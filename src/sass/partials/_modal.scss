@@ -1,0 +1,117 @@
+@use "variables" as *;
+
+.modalOpen{
+  cursor: pointer;
+  color: white;
+  padding:6px 10px;
+  background:$gradientTwo;
+  background-size:400%;
+  border: 3px ridge $primaryColor;
+  box-shadow: 0 4px 0 0 $primaryColor;
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+  animation: bg-animation 2s infinite alternate;
+  &:hover{
+    color: $fourthColor;
+  }
+  &:focus{
+      color:$fourthColor;
+  }
+}
+@keyframes bg-animation{
+  0%{background-position: left;}
+  100%{background-position: 100%;}
+}
+/*Thanks to Kevin Powell for "Fun ways to animate CSS gradients" tutorial*/ 
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+    animation: modal-open 0.5s;
+  }
+  
+  .modalContent {
+    background: $thirdColor;
+    margin-top: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+    text-align: left;
+    .modalHeader {
+        text-align: center;
+        font-weight: 500;
+        padding: 10px 0;
+        font-size: 26px;
+        h5{
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+      }
+      .modalBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        .imgModal{
+          border-radius: 5px;
+          border: 5px ridge darkgray;
+          width: 90%;
+          height: auto;
+        }
+        p{
+            width: 90%;
+            text-align: center;
+        }
+        .cardView{
+          cursor: pointer;
+          color: white;
+          padding:6px 10px;
+          background:$gradientTwo;
+          background-size:400%;
+          border: 3px ridge $primaryColor;
+          box-shadow: 0 4px 0 0 $primaryColor;
+          transition: all 300ms ease-in-out;
+          border-radius: 5px;
+          animation: bg-animation 2s infinite alternate;
+          &:hover{
+            color: $fourthColor;
+          }
+          &:focus{
+              color:$fourthColor;
+          }
+        }
+      }
+      .modalFooter {
+        text-align: center;
+        padding: 15px 0;
+        .modalClose {
+          cursor: pointer;
+          color: white;
+          padding:6px 10px;
+          background:$gradientTwo;
+          background-size:400%;
+          border: 3px ridge $primaryColor;
+          box-shadow: 0 4px 0 0 $primaryColor;
+          transition: all 300ms ease-in-out;
+          border-radius: 5px;
+          animation: bg-animation 2s infinite alternate;
+          &:hover{
+            color: $fourthColor;
+          }
+          &:focus{
+              color:$fourthColor;
+          }
+          }
+      }
+  }

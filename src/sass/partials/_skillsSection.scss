@@ -29,6 +29,7 @@
                 justify-content: center;
                 text-align: center;
                 font-size: 5rem;
+                margin-bottom: 1rem;
                 transition: 0.3s;
                 i{
                     padding-bottom: 20px;
@@ -37,11 +38,11 @@
                     font-size: 1rem;
                 }
                 &:hover{
-                    color: $fifthAmendment;
+                    color: $fourthColor;
                 }
                 &:focus{
 
-                    color: $fifthAmendment;
+                    color: $fourthColor;
                 }
             }
         }

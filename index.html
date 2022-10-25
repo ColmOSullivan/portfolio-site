@@ -12,7 +12,7 @@
     <title>Colm O'Sullivan</title>
   </head>
   <body>
-    <header class="">
+    <header>
       <div class="wrapper">
         <nav class="navBar flexContainer">
           <ul class="navList">
@@ -34,7 +34,7 @@
         <div class="heroBox flexContainer">
           <div class="heroText flexContainer">
             <h1>Colm O'Sullivan</h1>
-            <h2>Toronto based web developer</h2>
+            <h2>Web developer</h2>
           </div>
           <!-- .heroText ends -->
         </div>
@@ -45,13 +45,6 @@
     <main>
       <section id="about" class="aboutSection flexContainer">
         <div class="aboutContainer flexContainer wrapper">
-          <!-- <div class="profileImageContainer">
-            <img
-              src="./assets/images/ProfilePic.jpg"
-              alt="A picture of Colm O Sullivan."
-            />
-          </div> -->
-          <!-- .profileImageContainer ends -->
           <div class="aboutText">
             <h3>About me</h3>
 
@@ -147,10 +140,40 @@
                 />
                 <div class="cardContent">
                   <h4 class="cardTitle">Project Title</h4>
-                  <p class="cardSub">Languages used.</p>
-                  <p class="cardDescription">Lorem, ipsum dolor.</p>
-                  <a class="cardButton" href="#">View live</a>
-                  <a class="cardButton" href="#">View code</a>
+                  <button class="modalOpen findButton" data-modal="modal1">
+                    Find out more
+                  </button>
+                  <!-- MODAL ONE -->
+                  <div class="modal" id="modal1">
+                    <div class="modalContent">
+                      <div class="modalHeader title">
+                        <h4 class="cardTitle">Project Title</h4>
+                        <h5>languages used</h5>
+                      </div>
+                      <div class="modalBody">
+                        <img
+                          src="./assets/images/pokedexScreenshot.jpg"
+                          alt="A screenshot of a pokedex game devloped for the web"
+                          class="imgModal"
+                        />
+                        <p>
+                          Project description. Lorem ipsum, dolor sit amet
+                          consectetur adipisicing elit. Iure aspernatur vitae
+                          facilis quidem aliquid laboriosam molestiae voluptas
+                          quisquam necessitatibus in.
+                        </p>
+                        <div>
+                          <a class="cardView" href="#">View live</a>
+                          <a class="cardView" href="#">View code</a>
+                        </div>
+                      </div>
+                      <!-- .viewContainer ends -->
+                      <div class="modalFooter">
+                        <button class="link modalClose">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MODAL ONE ENDS -->
                 </div>
                 <!-- .cardContent ends -->
               </div>
@@ -163,10 +186,39 @@
                 />
                 <div class="cardContent">
                   <h4 class="cardTitle">Project Title</h4>
-                  <p class="cardSub">Languages used.</p>
-                  <p class="cardDescription">Lorem, ipsum dolor.</p>
-                  <a class="cardButton" href="#">View live</a>
-                  <a class="cardButton" href="#">View code</a>
+                  <button class="modalOpen findButton" data-modal="modal2">
+                    Find out more
+                  </button>
+                  <!-- modal begins -->
+                  <div class="modal" id="modal2">
+                    <div class="modalContent">
+                      <div class="modalHeader title">
+                        <h4 class="cardTitle">Project Title</h4>
+                        <h5>Languages used</h5>
+                      </div>
+                      <div class="modalBody">
+                        <img
+                          src="./assets/images/pokedexScreenshot.jpg"
+                          alt="A screenshot of a pokedex game devloped for the web"
+                          class="imgModal"
+                        />
+                        <p>
+                          Project description. Lorem ipsum, dolor sit amet
+                          consectetur adipisicing elit. Iure aspernatur vitae
+                          facilis quidem aliquid laboriosam molestiae voluptas
+                          quisquam necessitatibus in.
+                        </p>
+                        <div>
+                          <a class="cardView" href="#">View live</a>
+                          <a class="cardView" href="#">View code</a>
+                        </div>
+                      </div>
+                      <div class="modalFooter">
+                        <button class="link modalClose">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal ends -->
                 </div>
                 <!-- .cardContent ends -->
               </div>
@@ -179,10 +231,39 @@
                 />
                 <div class="cardContent">
                   <h4 class="cardTitle">Project Title</h4>
-                  <p class="cardSub">Languages used.</p>
-                  <p class="cardDescription">Lorem, ipsum dolor.</p>
-                  <a class="cardButton" href="#">View live</a>
-                  <a class="cardButton" href="#">View code</a>
+                  <button class="modalOpen findButton" data-modal="modal3">
+                    Find out more
+                  </button>
+                  <!-- modal begins -->
+                  <div class="modal" id="modal3">
+                    <div class="modalContent">
+                      <div class="modalHeader title">
+                        <h4 class="cardTitle">Project Title</h4>
+                        <h5>Languages used</h5>
+                      </div>
+                      <div class="modalBody">
+                        <img
+                          src="./assets/images/pokedexScreenshot.jpg"
+                          alt="A screenshot of a pokedex game devloped for the web"
+                          class="imgModal"
+                        />
+                        <p>
+                          Project description. Lorem ipsum, dolor sit amet
+                          consectetur adipisicing elit. Iure aspernatur vitae
+                          facilis quidem aliquid laboriosam molestiae voluptas
+                          quisquam necessitatibus in.
+                        </p>
+                        <div>
+                          <a class="cardView" href="#">View live</a>
+                          <a class="cardView" href="#">View code</a>
+                        </div>
+                      </div>
+                      <div class="modalFooter">
+                        <button class="link modalClose">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal ends -->
                 </div>
                 <!-- .cardContent ends -->
               </div>
@@ -195,10 +276,39 @@
                 />
                 <div class="cardContent">
                   <h4 class="cardTitle">Project Title</h4>
-                  <p class="cardSub">Languages used.</p>
-                  <p class="cardDescription">Lorem, ipsum dolor.</p>
-                  <a class="cardButton" href="#">View live</a>
-                  <a class="cardButton" href="#">View code</a>
+                  <button class="modalOpen findButton" data-modal="modal4">
+                    Find out more
+                  </button>
+                  <!-- modal begins -->
+                  <div class="modal" id="modal4">
+                    <div class="modalContent">
+                      <div class="modalHeader title">
+                        <h4 class="cardTitle">Project Title</h4>
+                        <h5>Languages used</h5>
+                      </div>
+                      <div class="modalBody">
+                        <img
+                          src="./assets/images/pokedexScreenshot.jpg"
+                          alt="A screenshot of a pokedex game devloped for the web"
+                          class="imgModal"
+                        />
+                        <p>
+                          Project description. Lorem ipsum, dolor sit amet
+                          consectetur adipisicing elit. Iure aspernatur vitae
+                          facilis quidem aliquid laboriosam molestiae voluptas
+                          quisquam necessitatibus in.
+                        </p>
+                        <div>
+                          <a class="cardView" href="#">View live</a>
+                          <a class="cardView" href="#">View code</a>
+                        </div>
+                      </div>
+                      <div class="modalFooter">
+                        <button class="link modalClose">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal ends -->
                 </div>
                 <!-- .cardContent ends -->
               </div>
@@ -216,19 +326,28 @@
 
           <div class="socialContainer flexContainer">
             <div class="socialIcon">
-              <i class="devicon-linkedin-plain"></i>
+              <a href="https://www.linkedin.com/in/colm-o-sullivan-9163baa6/"
+                ><i class="devicon-linkedin-plain"></i
+              ></a>
             </div>
             <div class="socialIcon">
-              <i class="devicon-github-original"></i>
+              <a href="https://github.com/ColmOSullivan"
+                ><i class="devicon-github-original"></i
+              ></a>
             </div>
             <div class="socialIcon">
-              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <a href="malito:colm.osullivan1@gmail.com"
+                ><i class="fa-sharp fa-solid fa-envelope"></i
+              ></a>
             </div>
           </div>
           <!-- .socialContainer ends -->
 
           <div class="contactText">
-            <p>Please use any of the following methods to contact me.</p>
+            <p>
+              Please use any of the above methods to contact me, and download my
+              resume to learn more.
+            </p>
           </div>
           <div>
             <a class="resumeButton" href="#">Resume</a>

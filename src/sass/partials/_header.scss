@@ -7,7 +7,7 @@ header{
     background-size:400%;
     background-position:left;
     background-repeat: no-repeat;
-    height: min(50vh, 100rem);
+    height: min(54vh, 100rem);
     flex-direction: column;
     animation: bg-animation 10s infinite alternate;
 }
@@ -34,9 +34,11 @@ header{
             color: white;
         }
         h2{
+            margin-top: 1rem;
+            text-transform: capitalize;
             text-shadow: 1px 1px black;
             color: white;
-            font-size: 1.25rem;
+            font-size: 1.30rem;
         }
     }
     
@@ -72,10 +74,10 @@ header{
     letter-spacing: 1px;
     transition: 0.7s ease;
     &:hover{
-        color: $fifthAmendment;
+        color: $fourthColor;
     }
     &:focus{
-        color:$fifthAmendment;
+        color:$fourthColor;
     }
   }
   
@@ -94,6 +96,7 @@ ul {
   width: 40px;
   height: 4px;
   margin: 5px auto;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   background-color: white;
   box-shadow: 1px 1px black;
@@ -128,10 +131,11 @@ ul {
   .navList{
     position: fixed;
     left: 100%;
-    top: 45px;
+    // top: 45px;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
     width: 100%;
+    height: 100%;
     text-align:end;
     transition: 0.3s;
 
