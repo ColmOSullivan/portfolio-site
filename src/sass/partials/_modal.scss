@@ -8,7 +8,7 @@
   padding:6px 10px;
   background:$gradientTwo;
   background-size:400%;
-  border: 3px ridge $primaryColor;
+  border: 3px double $primaryColor;
   box-shadow: 0 4px 0 0 $primaryColor;
   transition: all 300ms ease-in-out;
   border-radius: 5px;
@@ -40,7 +40,7 @@
   }
   
   .modalContent {
-    border: 3px ridge $fourthColor;
+    border: 3px double $fourthColor;
     background: $thirdColor;
     margin-top: 60px;
     width: 60%;
@@ -72,12 +72,15 @@
         padding: 15px 0;
         .imgModal{
           border-radius: 5px;
-          border: 5px ridge darkgray;
+          border: 5px double darkgray;
           width: 90%;
           height: auto;
         }
         p{
             width: 90%;
+            .modalLink{
+              color: $fourthColor;
+            }
         }
         .cardView{
           cursor: pointer;
@@ -85,7 +88,7 @@
           padding:6px 10px;
           background:$gradientTwo;
           background-size:400%;
-          border: 3px ridge $primaryColor;
+          border: 3px double $primaryColor;
           box-shadow: 0 4px 0 0 $primaryColor;
           transition: all 300ms ease-in-out;
           border-radius: 5px;
@@ -110,7 +113,7 @@
           padding:6px 10px;
           background:$gradientTwo;
           background-size:400%;
-          border: 3px ridge $primaryColor;
+          border: 3px double $primaryColor;
           box-shadow: 0 4px 0 0 $primaryColor;
           transition: all 300ms ease-in-out;
           border-radius: 5px;

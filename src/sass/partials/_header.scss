@@ -3,18 +3,18 @@
 header{
     // background-image: linear-gradient(black, black), url(/assets/images/tor-skyline.jpg);
     // background-blend-mode: saturation;
-    background-image: $gradientOne;
-    background-size:400%;
-    background-position:left;
+    background: $gradientOne;
+    background-size:600%;
+    // background-position:right;
     background-repeat: no-repeat;
-    height: min(90vh, 100rem);
+    height: min(100vh, 100rem);
     flex-direction: column;
     animation: bg-animation 10s infinite alternate;
 }
 
 @keyframes bg-animation{
-  0%{background-position: left;}
-  100%{background-position: 100%;}
+  100%{background-position: right;}
+  0%{background-position: 100%;}
 }
 /*Thanks to Kevin Powell for "Fun ways to animate CSS gradients" tutorial*/ 
 
@@ -64,6 +64,7 @@ header{
   }
 
   nav a {
+    // font-family: $headingFont;
     text-shadow: 1px 1px black;
     text-decoration: none;
     color: white;

@@ -18,16 +18,21 @@
                 grid-row: 1 / 2;
             }
             .card{
+                border: 3px double $fourthColor;
                 border-radius: 5px;
                 background: $thirdColor;
                 transition: 0.3s;
-                &:hover{
-                    box-shadow: -10px 10px 0 $fourthColor;
-                }
+                text-align: center;
+                // &:hover{
+                //     // box-shadow: -10px 10px 0 $fourthColor;
+                //     background-image: url(../../../assets/images/stareIntoTheAbyss.jpg);
+                // }
                 .imgCard{
-                    max-width: 100%;
-                    
-                    height: auto;
+                    margin: 0.2rem 0;
+                    border-radius: 5px;
+                    border: 5px double darkgray;
+                    max-width: 90%;
+                    max-height: 90%;
                 }
                 .cardContent{
                     display: flex;
@@ -37,7 +42,6 @@
                     background: $thirdColor;
                     align-self: end;
                     margin: .5rem .5rem .75rem;
-                    // padding: .5rem;
                     .cardTitle{
                         text-transform: capitalize;
                         padding: 10px 0;
