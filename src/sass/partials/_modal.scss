@@ -58,10 +58,12 @@
         font-weight: 500;
         padding: 10px 0;
         font-size: 26px;
-        border-bottom: 2px solid $primaryColor;;
+        border-bottom: 2px solid $primaryColor;
+        text-shadow: 1px 1px black;
         h5{
             font-size: 1rem;
             text-transform: capitalize;
+            text-shadow: 1px 1px black;
         }
       }
       .modalBody {
@@ -73,11 +75,14 @@
         .imgModal{
           border-radius: 5px;
           border: 5px double darkgray;
-          width: 90%;
+          width: 66%;
           height: auto;
         }
         p{
             width: 90%;
+            text-align: left;
+            padding:1rem;
+            text-shadow: 1px 1px black;
             .modalLink{
               color: $fourthColor;
             }
